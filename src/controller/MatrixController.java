@@ -1,9 +1,9 @@
 
-package matrizz;
+package controller;
 
 import java.util.Random;
 
-public class controller {
+public class MatrixController {
 
     public Integer [][] matriz (Integer nfilas, Integer ncolumnas){
         Integer [][] matriz= new Integer [nfilas] [ncolumnas];

@@ -2,20 +2,20 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JDialog.java to edit this template
  */
-package ejecutor;
+package views;
 
 import javax.swing.table.DefaultTableModel;
-import matrizz.controller;
+import controller.MatrixController;
 /**
  *
  * @author Tuf F15
  */
-public class Vista extends javax.swing.JDialog {
+public class FrmMatrix extends javax.swing.JDialog {
 
-    private controller c = new controller();
+    private MatrixController c = new MatrixController();
     private Integer[][] matrizOg;
     
-    public Vista(java.awt.Frame parent, boolean modal) {
+    public FrmMatrix(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
         jTable2.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_OFF);
@@ -228,21 +228,23 @@ public class Vista extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Vista.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmMatrix.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Vista.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmMatrix.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Vista.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmMatrix.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Vista.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmMatrix.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                Vista dialog = new Vista(new javax.swing.JFrame(), true);
+                FrmMatrix dialog = new FrmMatrix(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {
